@@ -1,0 +1,14 @@
+REQUIREMENTS
+*	python 2.7
+*	python packages ntlk,whoosh, itertools, porterstemmer and text.blob
+*	wordnet 3.0
+
+USAGE
+create directoy named index/ in your working folder before creating the index
+Creating index:
+	from  file read.py run create_index(file2, file2)	
+file1 and file2 are the english sentence list and its trnslation list aligned parallely
+
+finding closest n matches for a sentence:
+from file levenshtein.py run getMatchingSentences(querySentence, number_of_matches, [enableWsd= True])
+the third optional argument enables wsd 
